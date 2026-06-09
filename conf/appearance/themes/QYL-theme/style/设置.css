@@ -1,0 +1,67 @@
+:root {
+    --QYL-account-background1: linear-gradient(to bottom, #ffffff, #f1f0fe, #e0e1fe, #ccd4ff, #b5c7ff, #adc0ff, #a5b8ff, #9db1ff, #a8acff, #b6a7ff, #c4a0ff, #d499ff);
+    --QYL-account-background2: linear-gradient(to bottom, #ffffff, #fcf4fc, #ffe7ef, #ffdad9, #ffd2bd, #ffccae, #ffc69e, #ffc18d, #ffb68d, #ffac8f, #ffa293, #ff9999);
+}
+/* 设置页面 */
+div[data-key="dialog-setting"] {
+    border: none;
+}
+div[data-key="dialog-setting"] .config__tab-wrap {
+    height: calc(100% - 40px);
+    margin: 20px 20px 0px 10px;
+    border-radius: var(--b3-border-radius);
+}
+div[data-key="dialog-setting"] .b3-tab-bar {
+    width: 180px;
+}
+/* 账户界面 */
+.config-account__center:not(.config-account__center--text) {
+    margin: 200px 20px;
+    border-radius: var(--b3-border-radius);
+    background-image: var(--QYL-account-background1);
+}
+.config-account__center.config-account__center--text {
+    margin: 200px 20px;
+    border-radius: var(--b3-border-radius);
+    background-image: var(--QYL-account-background2);
+}
+.config-account__center .b3-text-field.fn__block.b3-form__icon-input {
+    padding: 7px 10px;
+}
+.config-account__center.config-account__center--text .b3-form__icon-icon {
+    top: 8px;
+}
+.config-account__center.config-account__center--text .b3-button.b3-button--text  {
+    top: 4.5px !important;
+    right: 3px !important;
+}
+/* 集市 */
+.config-bazaar__panel .b3-card {
+    box-shadow: var(--b3-light-shadow);
+}
+.config-bazaar__panel .b3-card {
+    background-color: rgba(255, 0, 0, 0);
+}
+.config-bazaar__panel .b3-card:hover {
+    background-color: var(--QYL-hover);
+}
+/* 修复集市毛玻璃 */
+div[data-key="dialog-setting"] [data-name="bazaar"] .layout-tab-bar {
+    background-color: rgba(255, 0, 0, 0);
+}
+/* 修复AI毛玻璃 */
+div[data-key="dialog-setting"] [data-name="AI"] .layout-tab-bar {
+    background-color: rgba(255, 0, 0, 0);
+}
+/* 修复代码片段毛玻璃 */
+[data-key="dialog-snippets"] .layout-tab-bar {
+    background-color: rgba(255, 0, 0, 0);
+}
+/* 修复资源毛玻璃 */
+div[data-key="dialog-setting"] [data-name="image"] .layout-tab-bar {
+    background-color: rgba(255, 0, 0, 0);
+}
+/* 修复数据历史毛玻璃 */
+[data-key="dialog-history"] .layout-tab-bar {
+    background-color: rgba(255, 0, 0, 0);
+}

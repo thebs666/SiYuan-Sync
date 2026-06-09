@@ -1,0 +1,29 @@
+{
+  "name": "Whisper-Icons",
+  "author": "TCOTC",
+  "url": "https://github.com/TCOTC/Whisper-Icons",
+  "version": "1.0.0",
+  "minAppVersion": "2.8.8",
+  "displayName": {
+    "default": "Whisper",
+    "zh_CN": "浅吟"
+  },
+  "description": {
+    "default": "An icon pack customized based on personal preferences",
+    "zh_CN": "根据个人偏好制作的图标包"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "custom": ["https://bento.me/jeffff"]
+  },
+  "keywords": [
+    "Whisper Icons",
+    "Whisper Icon Pack",
+    "Whisper Icons Pack",
+    "浅吟图标",
+    "浅吟图标包"
+  ]
+}

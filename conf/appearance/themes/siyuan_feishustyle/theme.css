@@ -1,0 +1,450 @@
+:root {
+    /* 主色 */
+    --b3-theme-primary: #4a7fff;
+    --b3-theme-primary-light: rgba(58, 121, 243, 0.65);
+    --b3-theme-primary-lighter: rgba(57, 121, 255, 0.48);
+    --b3-theme-primary-lightest: rgba(63, 129, 255, 0.24);
+    --b3-theme-secondary: #f3a92f;
+    --b3-theme-background: #1a1a1a;
+    --b3-theme-background-light: rgba(255, 255, 255, .075);
+    --b3-theme-surface: #262626;
+    --b3-theme-surface-light: rgba(41, 42, 45, .86);
+    --b3-theme-surface-lighter: #5f5f5f;
+    --b3-theme-error: #fb5445;
+    --b3-theme-success: #65b84d;
+
+    /* 文字颜色 */
+    --b3-theme-on-primary: var(--b3-theme-on-background);
+    --b3-theme-on-secondary: #fff;
+    --b3-theme-on-background: #f0f0f0;
+    --b3-theme-on-surface: #a6a6a6;
+    --b3-theme-on-surface-light: #bababa;
+    --b3-theme-on-error: #ffffff;
+    --b3-theme-on-list: rgb(76, 136, 255);
+    /* 字体 */
+    --b3-font-size: 14px;
+
+    /* 顶部工具栏 */
+    --b3-toolbar-background: var(--b3-theme-surface);
+    --b3-toolbar-blur-background: var(--b3-border-color);
+    --b3-toolbar-color: var(--b3-theme-on-surface);
+    --b3-toolbar-hover: var(--b3-theme-background-light);
+    --b3-toolbar-left-mac: 69px;
+
+    /* 线条 */
+    --b3-border-color: #363636;
+    --b3-border-radius-code: 5px;
+    --b3-border-radius: 7px;
+    --b3-border-radius-b: 12px;
+
+    /* 滚动条 */
+    --b3-scroll-color: rgba(230, 230, 230, .2);
+
+    /* 列表 */
+    --b3-list-hover: rgba(255, 255, 255, .075);
+    --b3-list-icon-hover: rgba(201, 209, 217, .1);
+
+    /* 菜单 */
+    --b3-menu-background: var(--b3-theme-surface);
+
+    /* 提示 */
+    --b3-tooltips-background: #030303;
+    --b3-tooltips-color: var(--b3-theme-on-surface-light);
+    --b3-tooltips-second-color: #7d7c7a;
+    --b3-tooltips-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+
+    /* 为空提示 */
+    --b3-empty-color: var(--b3-theme-on-surface);
+
+    /* 遮罩 */
+    --b3-mask-background: rgba(10, 10, 10, .4);
+
+    /* 卡片背景 */
+    --b3-card-error-color: rgb(243, 153, 147);
+    --b3-card-error-background: #442724;
+    --b3-card-warning-color: rgb(255, 213, 153);
+    --b3-card-warning-background: #554636;
+    --b3-card-info-color: rgb(166, 213, 250);
+    --b3-card-info-background: #28405c;
+    --b3-card-success-color: rgb(183, 223, 185);
+    --b3-card-success-background: #425347;
+
+    /* 自定义文字 */
+    --b3-font-color1: var(--b3-card-error-color);
+    --b3-font-color2: var(--b3-card-warning-color);
+    --b3-font-color3: var(--b3-card-info-color);
+    --b3-font-color4: var(--b3-card-success-color);
+    --b3-font-color5: var(--b3-theme-on-surface);
+    --b3-font-color6: var(--b3-theme-primary);
+    --b3-font-color7: var(--b3-theme-secondary);
+    --b3-font-color8: var(--b3-theme-error);
+    --b3-font-color9: #f5539e;
+    --b3-font-color10: #bc67bc;
+    --b3-font-color11: #65b84d;
+    --b3-font-color12: #f5822e;
+    --b3-font-color13: var(--b3-theme-background);
+    --b3-font-background1: var(--b3-card-error-background);
+    --b3-font-background1-light: #e36b5a;
+    --b3-font-background2: var(--b3-card-warning-background);
+    --b3-font-background3: var(--b3-card-info-background);
+    --b3-font-background4: var(--b3-card-success-background);
+    --b3-font-background5: rgb(76, 106, 128);
+    --b3-font-background6: #0c3d88;
+    --b3-font-background7: #593905;
+    --b3-font-background8: #541812;
+    --b3-font-background9: #6a0634;
+    --b3-font-background10: #6b2f6b;
+    --b3-font-background11: #376629;
+    --b3-font-background12: #803a06;
+    --b3-font-background13: var(--b3-theme-on-background);
+
+    /* 高亮 */
+    --b3-highlight-color: #222;
+    --b3-highlight-background: #ffff00;
+    --b3-highlight-current-background: #ff9632;
+
+    /* 下拉菜单 */
+    --b3-select-background: url("data:image/svg+xml;utf8,<svg fill='rgba(154, 160, 166, .68)' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>") no-repeat right 2px center var(--b3-theme-background);
+
+    /* switch */
+    --b3-switch-background: #444746;
+    --b3-switch-border: var(--b3-theme-on-surface-light);
+    --b3-switch-hover: rgba(253, 252, 251, .10);
+    --b3-switch-checked: var(--b3-theme-on-background);
+    --b3-switch-checked-background: #4b86fb;
+    --b3-switch-checked-hover: var(--b3-theme-primary);
+    --b3-switch-checked-hover2: rgba(253, 252, 251, .10);
+
+    /* 阴影 */
+    --b3-point-shadow: inset 0 .5px .5px .5px rgba(255, 255, 255, .09), 0 3px 6px rgba(0, 0, 0, .04), 0 0 0 0 transparent;
+    --b3-dialog-shadow: 0 8px 24px #010409;
+    --b3-button-shadow: 0 5px 5px -3px rgb(0 0 0 / .2), 0 8px 10px 1px rgb(0 0 0 / .14), 0 3px 14px 2px rgb(0 0 0 / .12);
+
+    /* 图表颜色 */
+    --b3-graph-p-point: #076f7e;
+    --b3-graph-heading-point: hsl(254, 80%, 74.8%);
+    --b3-graph-math-point: #80FFA5;
+    --b3-graph-code-point: #00DDFF;
+    --b3-graph-table-point: #37A2FF;
+    --b3-graph-list-point: #FF0087;
+    --b3-graph-todo-point: #FFBF00;
+    --b3-graph-olist-point: #b3005f;
+    --b3-graph-listitem-point: #f65b00;
+    --b3-graph-bq-point: #8d48e3;
+    --b3-graph-super-point: #dd79ff;
+    --b3-graph-doc-point: #e8eaed;
+    --b3-graph-tag-point: #dbf32f;
+    --b3-graph-asset-point: #05c091;
+    --b3-graph-line: #9aa0a6;
+    --b3-graph-ref-line: #d23f31;
+    --b3-graph-tag-line: #5f6b06;
+    --b3-graph-tag-tag-line: #dbf32f;
+    --b3-graph-asset-line: #037457;
+    --b3-graph-hl-point: #f3a92f;
+    --b3-graph-hl-line: #4285f4;
+
+    /* 编辑器搜索颜色 */
+    --b3-protyle-search-background: #32593c;
+    --b3-protyle-search-border-color: #486a51;
+    --b3-protyle-search-current-background: #204282;
+
+    /* 代码片段背景 */
+    --b3-protyle-code-background: rgb(41, 41, 41);
+    --bg-body-overlay: #292929;
+    --line-border-card: #5f5f5f;
+    --N800: #e8e8e8;
+
+    /* 所见即所得行内元素颜色 */
+    --b3-protyle-inline-strong-color: inherit;
+    --b3-protyle-inline-em-color: inherit;
+    --b3-protyle-inline-u-color: inherit;
+    --b3-protyle-inline-s-color: inherit;
+    --b3-protyle-inline-link-color: rgb(76, 136, 255);
+    --b3-protyle-inline-mark-background: rgba(255, 208, 0, .4);
+    --b3-protyle-inline-mark-color: var(--b3-theme-on-background);
+    --b3-protyle-inline-tag-color: #9aa0a6;
+    --b3-protyle-inline-blockref-color: #8957e5;
+    --b3-protyle-inline-fileref-color: var(--b3-theme-secondary);
+
+    /* 表格 */
+    --b3-table-even-background: transparent;
+
+    /* 嵌入块 */
+    --b3-embed-background: transparent;
+
+    /* 引述块 */
+    --b3-bq-background: transparent;
+
+    /* 父块颜色 */
+    --b3-parent-background: var(--b3-theme-background);
+}
+
+:lang(ja_JP):root {
+    --b3-font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans", "Yu Gothic UI", "Segoe UI", sans-serif, "Apple Color Emoji", "Noto Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+}
+
+.protyle-action--order::after {
+    mix-blend-mode: screen;
+}
+
+.b3-text-field::-webkit-calendar-picker-indicator {
+    filter: invert(1)
+}
+
+/* 行内代码描边*/
+.fn__code, .b3-typography code:not(.hljs),
+.b3-typography span[data-type~=code],
+.protyle-wysiwyg code:not(.hljs),
+.protyle-wysiwyg span[data-type~=code] {
+    border: rgb(95, 95, 95) solid 1px;
+    border-radius: var(--b3-border-radius-code);
+    padding: 1px 4px 1px;
+    margin: 0 6px 0;
+    /*暂时缓解代码换行样式问题*/
+    white-space: pre;
+
+}
+
+/*字距+1*/
+.protyle-wysiwyg [data-node-id] [spellcheck] {
+    letter-spacing: 1px
+}
+
+.code-block {
+    /*border: rgb(95, 95, 95) solid 1px;*/
+    transition: none !important;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid var(--line-border-card, #dee0e3);
+}
+
+.b3-typography table thead th, .b3-typography table thead td, .protyle-wysiwyg table thead th, .protyle-wysiwyg table thead td {
+    font-weight: 600;
+    background: var(--bg-body-overlay);
+    /*border-collapse: separate;*/
+}
+
+video:only-of-type {
+    display: inline-block;
+    position: relative;
+    background: transparent;
+    border: 1px solid var(--line-border-card);
+    border-radius: 9px;
+    padding: 0;
+}
+
+iframe:only-of-type {
+    display: inline-block;
+    position: relative;
+    background: transparent;
+    border: 1px solid var(--line-border-card);
+    border-radius: 9px;
+    padding: 0;
+}
+
+.protyle-wysiwyg .code-block:not(pre) .protyle-action .protyle-action__language {
+    font-size: 85%;
+    color: var(--b3-theme-on-surface);
+    margin-left: 8px;
+    align-self: center;
+}
+
+.b3-typography div.hljs, .protyle-wysiwyg div.hljs {
+    padding: 24px 24px 18px 24px;
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+/*本来想在内圈加框的，但是缩小页面宽度后，图形会出现一个只有一点点能动的滑条，效果不好*/
+/* 图形加边框*/
+/*svg[role="graphics-document document"][aria-roledescription="sequence"],*/
+/*.flowchart[aria-roledescription="flowchart-v2"],*/
+/*.classDiagram,*/
+.render-node[data-node-id][data-type="NodeCodeBlock"]:not([data-subtype="plantuml"])
+/*.b3-typography [data-subtype=graphviz] [contenteditable=false] svg,*/
+/*.protyle-wysiwyg [data-subtype=graphviz] [contenteditable=false] svg*/
+{
+    border: 1px solid var(--line-border-card);
+    border-radius: var(--b3-border-radius);
+    padding: 4px;
+}
+
+ellipse {
+    stroke: var(--b3-theme-on-background);
+
+}
+
+path[stroke="#000000"] {
+    stroke: var(--b3-theme-on-background);
+    fill-opacity: 0;
+    stroke-width: 1px;
+}
+
+g:only-of-type polygon[stroke="#000000"] {
+    color: rgba(0, 0, 0, 0);
+    stroke: var(--b3-theme-on-background);
+}
+
+g:only-of-type polygon[stroke="transparent"] {
+    fill-opacity: 0;
+/ / stroke: var(--b3-theme-on-background);
+}
+
+text {
+    fill: var(--b3-theme-on-background);
+}
+
+rect {
+    fill-opacity: 0;
+    stroke: var(--b3-theme-on-background);
+    stroke-width: 1px;
+}
+
+.commit-label-bkg {
+    stroke: none;
+}
+
+.branchLabelBkg.label0 {
+    stroke: none;
+}
+
+.branchLabelBkg.label1 {
+    stroke: none;
+}
+
+.b3-typography [data-subtype=flowchart] [contenteditable=false] svg, .protyle-wysiwyg [data-subtype=flowchart] [contenteditable=false] svg {
+    background: transparent;
+    /*border: 1px solid var(--line-border-card);*/
+    /*border-radius: var(--b3-border-radius);*/
+    /*padding: 8px;*/
+}
+
+.layout-tab-bar .item {
+    line-height: 24px;
+}
+
+.b3-typography .h2, .b3-typography h2, .protyle-wysiwyg .h2, .protyle-wysiwyg h2 [data-type="NodeHeading"] {
+    padding: .3em 4px;
+    font-size: 1.55em;
+    /*border: 1px solid var(--line-border-card);*/
+}
+
+.b3-switch {
+    height: 22px;
+    width: 40px;
+    /*border-radius: 10px;*/
+
+}
+
+.b3-switch:checked::after {
+    /*background-color: var(--b3-switch-checked);*/
+    height: 18px;
+    width: 18px;
+    left: 28px;
+}
+/* 滑动勾选框*/
+label:hover .b3-switch:checked:not(:disabled)::before,
+.b3-switch:checked:hover:not(:disabled)::before,
+.b3-switch:checked::before {
+    background-color: var(--b3-switch-checked);
+    height: 18px;
+    width: 18px;
+    left: 28px;
+}
+
+.b3-switch::after {
+    width: 16px;
+    height: 16px;
+    left: 10px;
+}
+
+/*图片加边框*/
+/*.b3-typography .img>span:nth-child(2), .protyle-wysiwyg .img>span:nth-child(2):not(.emoji){*/
+/*    border: 1px solid var(--line-border-card);*/
+/*    !*border-*!*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/* 列表颜色*/
+.protyle-wysiwyg [data-node-id] .li > .protyle-action {
+    color: var(--b3-theme-on-list);
+}
+
+/* 选择已完成的任务项中的 svg 元素 */
+.protyle-wysiwyg [data-node-id] .protyle-task--done .protyle-action.protyle-action--task svg use {
+    fill: var(--b3-theme-primary-light);
+}
+
+/* 选择未完成的任务项中的 svg 元素 */
+.protyle-wysiwyg [data-node-id] .li:not(.protyle-task--done) .protyle-action.protyle-action--task svg use {
+    fill: var(--b3-theme-primary);
+}
+
+/*引用块 左侧白条*/
+.b3-typography blockquote::before, .b3-typography .bq::before, .protyle-wysiwyg blockquote::before, .protyle-wysiwyg .bq::before {
+    content: "";
+    background-color: var(--b3-theme-surface-lighter);
+    width: 2px;
+    border-radius: var(--b3-border-radius);
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    bottom: 6px;
+}
+
+/*浮动工具栏item*/
+.protyle-toolbar__item {
+    height: 24px;
+    border-radius: 4px;
+    margin: 0 4px 0;
+    color: var(--b3-theme-on-background);
+}
+
+/*浮动工具栏i*/
+.protyle-toolbar {
+    padding: 8px;
+    border: 1px solid var(--line-border-card);
+    background-color: rgb(41, 41, 41);
+}
+/* 去除浮动框左右圆角的特殊处理？？*/
+.protyle-toolbar__item:last-child, .protyle-toolbar__item:first-child {
+    border-radius: 4px;
+}
+
+/* 有序列表序号大小*/
+[data-node-id].list[data-subtype="o"] > .li:has(>.h1) > .protyle-action {
+    font-size: 1.75em;
+}
+[data-node-id].list[data-subtype="o"] > .li:has(>.h2) > .protyle-action {
+    font-size: 1.55em;
+}
+[data-node-id].list[data-subtype="o"] > .li:has(>.h3) > .protyle-action {
+    font-size: 1.38em;
+}
+[data-node-id].list[data-subtype="o"] > .li:has(>.h4) > .protyle-action {
+    font-size: 1.25em;
+}
+[data-node-id].list[data-subtype="o"] > .li:has(>.h5) > .protyle-action {
+    font-size: 1.13em;
+}
+/* 不显示列表竖线*/
+.protyle-wysiwyg [data-node-id].li::before {
+    border-left: 0;
+}
+/* 用户手动添加背景色时附送描边和边距*/
+.protyle-wysiwyg .p[data-node-id][style*="background-color:"]{
+    padding: 12px 12px 12px 18px;
+    border: 1px solid rgba(255, 255, 255,40%);
+}
+/* 链接增加左右空隙*/
+.protyle-wysiwyg [data-node-id] span[data-type=a]{
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+/* 表格内字变小*/
+.protyle-wysiwyg table thead th,
+.protyle-wysiwyg table tbody td {
+    font-size: 87.5%;
+    padding: 8px 8px;
+}

@@ -1,0 +1,82 @@
+@keyframes statusExpand {
+    0% {
+        transform: scaleX(0.4) scaleY(0.4) translate(0px,0px);
+    }
+
+    100% {
+        transform: translate(0px,0px);
+    }
+}
+
+
+.toolbar:not(.toolbar--border) ~ #status,.body--window #status{
+	position: fixed;
+    display: flex;
+    min-width: 0;
+    overflow: hidden;
+    align-items: center;
+    padding-right: 52px;
+    height: 24px;
+    line-height: 24px;
+    right: 0px;
+    bottom: 9px; 
+	border-radius: 6px;
+    border: none;
+    background-color: var(--Sv-status-msg-background);
+    transform-origin: 100% 100%;
+    animation: statusExpand .1s ;
+    .toolbar__item:not(.toolbar__item--close) {
+        padding:2px;
+        margin: unset;
+        height: 24px;
+        svg{
+            padding:3px;
+            width: 12px;
+        }
+        & span{
+            margin:3px;
+            font-size:12px;
+        }
+        &:hover {
+            background-color: var(--Sv-status-item-hover)!important;
+        }
+    }
+    >.fn__flex-1{
+        display: none;
+    }
+    #statusHelp{
+        position: absolute;
+        right: 26px;
+        color: var(--Sv-status-barDock-color);
+        box-shadow: 4px 0 0 0 var(--b3-theme-background);
+        background-color: var(--Sv-status-msg-background);
+    }
+    #barDock{
+        position: absolute;
+        right: 0px;
+        margin-left: 4px;
+        background-color: var(--Sv-status-msg-background);
+        box-shadow: 0 0 0 4px var(--b3-theme-background);
+    }
+    .status__msg:not(:empty){
+            padding-left: 26px!important;
+            padding-right: 10px;
+            &::after{
+                content: "📢";
+                font-size:12px;
+                padding:0 6px;
+                position: absolute;
+                left: 0px;
+            }
+    }
+}
+
+
+.status.fn__none{/*隐藏底栏保留停靠栏按钮*/
+    display: flex!important;
+    padding: 0px;
+    &>div:not(#barDock){
+        display: none;
+    }
+}
+
