@@ -371,7 +371,8 @@
                       "title": "视觉融合雨刮"
                     },
                     {
-                      "activeTime": "1780985309835",
+                      "active": true,
+                      "activeTime": "1781143790936",
                       "children": {
                         "action": "cb-get-scroll",
                         "blockId": "20250708131530-si2w3ba",
@@ -416,8 +417,7 @@
                       "title": "地图激活码"
                     },
                     {
-                      "active": true,
-                      "activeTime": "1781069112676",
+                      "activeTime": "1781143788445",
                       "children": {
                         "action": "cb-get-scroll",
                         "blockId": "20250708131421-nlyfiw7",
@@ -613,13 +613,12 @@
   "readonly": false,
   "localIPs": [
     "127.0.0.1",
-    "10.184.24.221",
+    "10.184.26.109",
     "198.19.0.1",
-    "169.254.84.32",
     "[::1]",
     "[fe80::1]",
-    "[fe80::1896:706e:c547:caf1]",
-    "[fe80::3c49:9ff:fe16:d1ab]",
+    "[fe80::18a4:de9c:2871:67c1]",
+    "[fe80::c806:e6ff:fe3e:42e4]",
     "[fe80::7b6b:61d5:bc46:f056]",
     "[fe80::34ed:c41d:b619:d484]",
     "[fe80::16d:740b:8f5b:c426]",
@@ -628,9 +627,7 @@
     "[fe80::e351:a572:b604:3075]",
     "[fe80::7e3b:f02f:64b5:1cb5]",
     "[fe80::ebc3:8ae8:77ba:a798]",
-    "[fe80::378d:9e0e:78a5:9885]",
-    "[fe80::88d5:e6ff:fe9d:c245]",
-    "[fe80::c97:1f65:a076:ca8c]"
+    "[fe80::378d:9e0e:78a5:9885]"
   ],
   "accessAuthCode": "",
   "system": {
@@ -1426,7 +1423,7 @@
     "cTreeCount": 100,
     "blockCount": 2882,
     "cBlockCount": 5000,
-    "dataSize": 74230024,
+    "dataSize": 74234123,
     "cDataSize": 104857600,
     "assetsSize": 73252722,
     "cAssetsSize": 104857600
